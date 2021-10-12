@@ -6,7 +6,6 @@ const SIGNUP = (() => {
     const url = window.location.origin;
 
     function init(){
-        document.querySelector('header').innerHTML += menuItems(false);
         addEventListeners();
     }
 
@@ -14,10 +13,10 @@ const SIGNUP = (() => {
     function addEventListeners() {
         document.querySelector('#signupBtn').addEventListener('click', async (e) => {
             e.preventDefault();
-            // SHOW LOADING FOR 3 SECONDS
+            // SHOW LOADING
             document.querySelector('#loader1').style.display = 'block';
-            // GET USER DATA
-            const signUpForm = document.querySelector('#signupForm');
+            // GET INPUTS
+            const signUpForm = document.querySelector('#signUpForm');
             const name              = signUpForm.elements["name"].value;
             const email             = signUpForm.elements["email"].value;
             const password          = signUpForm.elements["password"].value;
@@ -37,7 +36,7 @@ const SIGNUP = (() => {
             // SIGNUP USER TO FIREBASE
             const req = await signupUser(name,email,password,confirm_password,phone_number,address);
             if(req.code == 200) {
-                window.location.replace(url + '/pages/login/');
+                window.location.replace(url + '/');
             } else {
                 document.querySelector('#loader1').style.display = 'none';
                 alert(req.message)

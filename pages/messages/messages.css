@@ -1,0 +1,102 @@
+:root {
+  --color-white: #ffffff;
+  --color-base: #ffcc47;
+  --color-black: #000000;
+  --color-brown-01: #fdd673;
+  --color-brown-02: #ffd364;
+  --color-brown-03: #ffc32a;
+  --color-brown-04: #ffb700;
+  --color-brown-05: #ffb700;
+}
+
+.main-frame {
+  max-width: 900px !important;
+}
+
+/* PROFILE */
+.profile-container>img {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  height: 50px;
+  width: 50px;
+}
+.profile-container>span {
+  margin: 0px 0px 0px 5px;
+  font-size: 20px;
+}
+.profile-container>i{
+  margin-top: 12px;
+  margin-right: 7px;
+  float: right;
+  font-size: 22px;
+}
+
+/* CONTACT */
+.contact-container {
+  border: 2px solid rgba(000,000,000,0.1);
+  max-height: calc(100vh - 150px);
+  overflow-y: scroll;
+}
+.contact-item-container {
+  padding: 10px 10px 10px 10px;
+  border-bottom: 1px solid rgba(000,000,000,0.05 );
+}
+.contact-item-container>img {
+  border-radius: 26px;
+  height: 50px;
+  width: 50px;
+}
+.contact-item-container>span {
+  margin: 0px 0px 0px 5px;
+  font-size: 17px;
+}
+
+
+/* MESSAGE */
+.message-container {
+  padding: 5px 0px 0px 0px;
+  border: 2px solid rgba(000,000,000,0.1);
+  height: calc(100% - 180px);
+  max-height: calc(100vh - 150px);
+  overflow-y: scroll;
+}
+.message-item-container-recieved {
+  padding: 10px 10px 10px 10px;
+}
+.message-item-container-recieved>img {
+  border-radius: 26px;
+  height: 25px;
+  width: 25px;
+}
+.message-item-container-recieved>span {
+  margin: 0px 0px 0px 5px;
+  padding: 5px 7px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #f7f7f7;
+}
+.message-item-container-sent {
+  padding: 10px 10px 10px 10px;
+  text-align: right;
+}
+.message-item-container-sent>span {
+  margin: 0px 0px 0px 5px;
+  padding: 5px 7px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #fbe5a8;
+}
+
+/* MESSAGE INPUT */
+.message-input-container {
+  margin-top: 10px;
+}
+.message-input-container>textarea {
+  height: 100px;
+  width: calc(100% - 116px);
+  float: left;
+}
+.message-input-container>input {
+  margin-left: 10px;
+  width: 100px;
+}

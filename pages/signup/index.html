@@ -10,40 +10,50 @@
 
     <title>Signup</title>
 </head>
-<body>
+<body class="bg-b">
     <!-- container-->
     <section>
-        <div class="main-frame container rounded p-2 my-5">
+        <div class="k-container-center k-txt-center">
+            <h1>K'usap</h1>
+            <h6 class="k-txt-italic k-font-monospace">"Talk anywhere, anytime."</h6>
             <!--SIGNUP NEW USER-->
-            <div class="my-3 p-2">
-                <h3 id="blog_title" class="mb-5 text-center">SIGNUP</h3>
-                <!--SIGNUP FORM-->
-                <form id="SignupForm">
-                    <div class="form-input-wrap mt-2">
-                        <input type="text" name="name" placeholder="Name"/>
-                    </div>
-                    <div class="form-input-wrap mt-2">
-                        <input type="email" name="email" placeholder="Email"/>
-                    </div>
-                    <div class="form-input-wrap mt-2">
-                        <input type="password" name="password" placeholder="Password"/>
-                    </div>
-                    <div class="form-input-wrap mt-2">
-                        <input type="password" name="confirm_password" placeholder="Confirm Password"/>
-                    </div>
-                    <div class="form-input-wrap mt-2">
-                        <input type="text" name="phone_number" placeholder="Phone Number"/>
-                    </div>
-                    <div class="form-input-wrap mt-2">
-                        <textarea type="text" name="address" placeholder="Address"></textarea>
-                    </div>
-                    <div class="form-input-wrap mt-4">
-                        <input id="signupBtn" type="submit" value="Signup"/>
-                    </div>
-                </form>
-             </div>
+    
+            <!--SIGNUP FORM-->
+            <form id="signUpForm" class="k-mt-20">
+                <h4>SIGNUP</h4>
+                <div class="k-mt-20">
+                    <input type="text" class="form-control" name="name" placeholder="Name"/>
+                </div>
+                <div class="form-input-wrap mt-2">
+                    <input type="email" class="form-control" name="email" placeholder="Email"/>
+                </div>
+                <div class="form-input-wrap mt-2">
+                    <input type="password" class="form-control" name="password" placeholder="Password"/>
+                </div>
+                <div class="form-input-wrap mt-2">
+                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password"/>
+                </div>
+                <div class="form-input-wrap mt-2">
+                    <input type="text" class="form-control" name="phone_number" placeholder="Phone Number"/>
+                </div>
+                <div class="form-input-wrap mt-2">
+                    <textarea type="text" class="form-control" name="address" placeholder="Address"></textarea>
+                </div>
+                <div class="form-input-wrap mt-4">
+                    <input id="signupBtn" class="btn" type="submit" value="Signup"/>
+                </div>
+                <div class="k-mt-20">
+                    Already have an account? <a href="/">Login</a>
+                </div>
+            </form>
+        
         </div>        
     </section>
+
+    <!--POPUP-->
+    <div id="loader1" class="loader">
+        <div class="loader-content">Loading...</div>
+    </div>
 
     <!-- Scripts-->
     <script src="./index.js" type="module"></script>

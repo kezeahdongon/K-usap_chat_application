@@ -1,9 +1,11 @@
-export const firebaseConfig = {
-  apiKey: "AIzaSyD3IerClQMWpMdfKsXWIB2NkhrHLvXEvK8",
-  authDomain: "projects-d3494.firebaseapp.com",
-  projectId: "projects-d3494",
-  storageBucket: "projects-d3494.appspot.com",
-  messagingSenderId: "964640280153",
-  appId: "1:964640280153:web:74cf5a7b788177bb986b48",
-  measurementId: "G-MDW9YZ4L2J"
+const firebaseConfig = {
+  apiKey: "AIzaSyCdsWJbigSqfmAdZG_2AbOsvHUSeS-JPUg",
+  authDomain: "k-usap.firebaseapp.com",
+  projectId: "k-usap",
+  storageBucket: "k-usap.appspot.com",
+  messagingSenderId: "218801282431",
+  appId: "1:218801282431:web:7b5a40529c4d3c3bfbce4a",
+  measurementId: "G-0LQQ8FP8K6"
 };
+
+export { firebaseConfig }
